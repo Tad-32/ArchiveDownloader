@@ -6,9 +6,11 @@ function urlStrip(url) {
     var urlParsed = url2.replace(';', '');
     return(urlParsed);
 }
-function linkUpdate(url) {
-    document.getElementById("hyperlink").href = ""+ url + "";
+function buttonUpdate(url) {
+    document.getElementById("downloadButton").action = ""+ url + "";
 }
+
+
 
 function buttonClick() {
     const url = document.getElementById('urlInput').value;
