@@ -1,1 +1,49 @@
+body {
+    background-color: #1c1c24;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parentDiv {
+    background-color: #bfc0c1;
+    border-radius: 25px;
+    margin-top: 1.5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    display: flex; 
+}
+  .childDiv {
+    display: inline-block;
+    vertical-align: middle;
 
+    padding-bottom: 30rem;
+  }
+#instructions {
+    background-color: #bfc0c1;
+    flex: 1.5;
+    border-radius: 25px 0px 0px 25px;
+}
+#downloadMenu {
+    background-color: #ececec;
+    flex: 1;  
+    text-align: center;  
+    border-radius: 25px 25px 25px 25px;
+
+}
+#instructions h1 {
+    text-align: center;
+}
+.button {
+    display: inline-block; /* Make it behave like a block element */
+    padding: 10px 20px;   /* Add padding for size */
+    background-color: blue; /* Background color */
+    color: white;          /* Text color */
+    text-decoration: none;  /* Remove underline */
+    border: none;          /* Remove border */
+    border-radius: 5px;   /* Rounded corners */
+    cursor: pointer;       /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: darkblue; /* Change color on hover */
+}
