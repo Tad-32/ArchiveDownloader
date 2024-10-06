@@ -3,31 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Archive Downloader</title>
-        <h1>Archive Downloader</h1>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="favicon.png">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="www.adobeconnect.com" referrerpolicy="no-referrer"></script>
     </head>
-<body>
 
-    <div>
-        <ul id="instructions">
-            <h1>How to download the archive.</h1>
-            <li>1. Open an archive and copy the URL at the top of the page.</li>
-            <li>2. Paste the link in the text box and click download.</li>
-            <li>3. Then click the three dots and click download</li>
-        </ul>
-        <div id="downloadMenu">
-            <input type="text" id="urlInput" placeholder="Please input your URL to download">
-            <button id="downloadButton" onclick="buttonClick();">Download</button>
-            <a href="#" target="_blank"  id="hyperlink">MP4 Link</a>
+    <body>
+        <div class="parentDiv">
+            
+            <div id="instructions" class="childDiv">
+                <ol>
+                    <h1>How to download the archive</h1>
+                    <li>Open an archive and copy the URL at the top of the page.</li>
+                    <li>Paste the link in the text box and click download.</li>
+                    <li>Then click the three dots and click download</li>
+                </ol>        
+            </div>
+            <div id="downloadMenu" class="childDiv">
+                <h1>Archive Downloader</h1>
+                <input type="text" id="urlInput" placeholder="Please input your archive link here.">
+                <br>
+                <a class="button" href="#" target="_blank"  id="hyperlink">Download here</a>
+            </div>
         </div>
-        
-        <p>
-        <p></p>
-        <p></p>
-    </div> 
-</body>
+    </body>
 </html>
