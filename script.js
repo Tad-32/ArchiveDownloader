@@ -6,12 +6,6 @@ function urlStrip(url) {
     var urlParsed = url2.replace(';', '');
     return(urlParsed);
 }
-function buttonUpdate(url) {
-    document.getElementById("downloadButton").action = ""+ url + "";
-}
-
-
-
 function buttonClick() {
     const url = document.getElementById('urlInput').value;
     const proxy_url = 'https://corsproxy.io/?' + encodeURIComponent(url);
@@ -25,7 +19,8 @@ function buttonClick() {
         for (var i = 1; i < lines.length; i++) { 
             if (lines[i].includes("var casRecordingURL = \'")) { 
                 nccor1Url = urlStrip(lines[i]);
-                linkUpdate(nccor1Url);
+                console.log("This is the Mp4 url for you nerds: " + nccor1Url + ". The problem that I ma haveing is that he site redirects which is why I need to have the user go to the site.");
+                window.open(nccor1Url, '_blank');
                 break;
             }
         }

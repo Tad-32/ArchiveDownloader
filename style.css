@@ -1,6 +1,6 @@
 body {
     background-color: #1c1c24;
-    overflow: hidden;
+    font-size: 1m;
     font-family: Arial, Helvetica, sans-serif;
 }
 .parentDiv {
@@ -11,39 +11,60 @@ body {
     margin-right: 20rem;
     display: flex; 
 }
-  .childDiv {
+.childDiv {
     display: inline-block;
     vertical-align: middle;
-
-    padding-bottom: 30rem;
+    padding-bottom: 0.2rem;
   }
 #instructions {
     background-color: #bfc0c1;
-    flex: 1.5;
     border-radius: 25px 0px 0px 25px;
-}
-#downloadMenu {
-    background-color: #ececec;
-    flex: 1;  
-    text-align: center;  
-    border-radius: 25px 25px 25px 25px;
-
+    flex: 1.5;
 }
 #instructions h1 {
     text-align: center;
 }
-.button {
-    display: inline-block; /* Make it behave like a block element */
-    padding: 10px 20px;   /* Add padding for size */
-    background-color: blue; /* Background color */
-    color: white;          /* Text color */
-    text-decoration: none;  /* Remove underline */
-    border: none;          /* Remove border */
-    border-radius: 5px;   /* Rounded corners */
-    cursor: pointer;       /* Change cursor to pointer */
-    transition: background-color 0.3s; /* Smooth transition */
+#instructions img {
+    height: 21rem;
 }
 
-.button:hover {
-    background-color: darkblue; /* Change color on hover */
+#downloadMenu {
+    background-color: #ececec;
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    flex: 1;
+}
+#downloadMenu p {
+    text-align: center;
+    padding-right: 14rem;
+}
+#urlInput {
+    background-color: #1c1c24; /* Background color */
+    color: #ececec;          /* Text color */
+    text-decoration: none;  /* Remove underline */
+    display: inline-block; /* Make it behave like a block element */
+    border: none;          /* Remove border */
+    cursor: pointer;       /* Change cursor to pointer */
+    padding: 0.90rem 4.5rem;   /* Add padding for size */
+    margin-top: 0.1rem;
+    border-radius: 5px;   /* Rounded corners */
+    text-align: left;
+}
+
+#downloadLink {
+    background-color: #1c1c24; /* Background color */
+    color: #ececec;          /* Text color */
+    text-decoration: none;  /* Remove underline */
+    display: inline-block; /* Make it behave like a block element */
+    border: none;          /* Remove border */
+    cursor: pointer;       /* Change cursor to pointer */
+    transition: 0.3s; /* Smooth transition */
+    padding: 0.85rem 6.4rem;   /* Add padding for size */
+    margin-top: 0.1rem;
+    border-radius: 5px;   /* Rounded corners */
+
+}
+
+#downloadLink:hover {
+    background-color: #1c1c24d8; /* Change color on hover */
 }

@@ -16,16 +16,21 @@
             <div id="instructions" class="childDiv">
                 <ol>
                     <h1>How to download the archive</h1>
-                    <li>Open an archive and copy the URL at the top of the page.</li>
-                    <li>Paste the link in the text box and click download.</li>
-                    <li>Then click the three dots and click download</li>
+                    <li>Open an archive and copy the link at the top of the page.</li>
+                    <img src="Copy the Archive Url.png" alt="Location of link.">
+                    <li>Paste the link in the text box to the right.</li>
+                    <img src="Mp4 download area.png" alt="Location of download button.">
+                    <li>Press the three dots and click download.</li>
                 </ol>        
             </div>
+
             <div id="downloadMenu" class="childDiv">
                 <h1>Archive Downloader</h1>
-                <input type="text" id="urlInput" placeholder="Please input your archive link here.">
+                <p>1. Paste here</p>
+                <input id="urlInput" type="text" placeholder="Input your archive link here">
                 <br>
-                <a class="button" href="#" target="_blank"  id="hyperlink">Download here</a>
+                <p>2. Click here</p>
+                <a id="downloadLink" onclick="buttonClick();">Download here</a>
             </div>
         </div>
     </body>
