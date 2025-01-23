@@ -8,7 +8,7 @@ function urlStrip(url) {
 }
 function buttonClick() {
     const url = document.getElementById('urlInput').value;
-    const proxy_url = 'https://corsproxy.io/?' + encodeURIComponent(url);
+    const proxy_url = 'https://corsproxy.io/?url=' + encodeURIComponent(url);
     $.get(proxy_url, (data, status) => 
     {
         var el = document.createElement( 'html' );
